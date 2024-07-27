@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import {NgIf} from "@angular/common";
+import {NgIf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-input-page',
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    NgIf
+    NgIf,
+    NgStyle
   ],
   templateUrl: './input-page.component.html',
   styleUrl: './input-page.component.css'

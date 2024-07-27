@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Tip Calculator</h1>
+  <form [formGroup]="tipForm" (ngSubmit)="onSubmit()">
+    <label for="cost">Cost of Service:</label>
+    <input id="cost" type="number" formControlName="cost">
+
+    <label>Service Quality:</label>
+    <label><input type="radio" formControlName="quality" value="0.15"> Okay (15%)</label>
+    <label><input type="radio" formControlName="quality" value="0.18"> Good (18%)</label>
+    <label><input type="radio" formControlName="quality" value="0.20"> Excellent (20%)</label>
+
+    <label>
+      <input type="checkbox" formControlName="roundUp"> Round up tip
+    </label>
+
+    <button type="submit" [disabled]="tipForm.invalid">Calculate Tip</button>
+  </form>
+</div>
+
+

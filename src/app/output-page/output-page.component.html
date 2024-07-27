@@ -1,10 +1,10 @@
 <div class="container">
   <h1>Tip Summary</h1>
-  <p>Cost of Service: {{ data.cost | currency }}</p>
-  <p>Service Quality: {{ data.quality * 100 }}%</p>
-  <p>Round Up Tip: {{ data.roundUp ? 'Yes' : 'No' }}</p>
-  <p>Calculated Tip: {{ data.tip | currency }}</p>
-  <p>Total Bill: {{ data.total | currency }}</p>
+  <p><strong>Cost of Service:</strong> {{ data.cost | currency }}</p>
+  <p><strong>Service Quality:</strong> {{ data.quality * 100 }}%</p>
+  <p><strong>Round Up Tip:</strong> {{ data.roundUp ? 'Yes' : 'No' }}</p>
+  <p><strong>Calculated Tip:</strong> {{ data.tip | currency }}</p>
+  <p><strong>Total Bill:</strong> {{ data.total | currency }}</p>
   <button (click)="goBack()">Back to Input</button>
 </div>
 
